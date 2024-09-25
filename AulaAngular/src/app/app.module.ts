@@ -9,6 +9,7 @@ import { FeatureComponent } from './feature/feature.component';
 import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
+import { ExemploDiretivasComponent } from './exemplo-diretivas/exemplo-diretivas.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     FeatureComponent,
     AboutComponent,
     NotFoundComponent,
+    ExemploDiretivasComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [],

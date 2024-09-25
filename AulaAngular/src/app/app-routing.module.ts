@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { FeatureComponent } from './feature/feature.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ExemploDiretivasComponent } from './exemplo-diretivas/exemplo-diretivas.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'feature', component: FeatureComponent },
   { path: 'feature/:id', component: FeatureComponent },
+  { path: 'diretiva', component: ExemploDiretivasComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
