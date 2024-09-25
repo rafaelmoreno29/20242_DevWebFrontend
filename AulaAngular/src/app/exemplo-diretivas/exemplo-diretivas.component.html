@@ -9,10 +9,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
+        <tr *ngFor="let aluno of alunos">
+          <th scope="row">{{ aluno.ra }}</th>
+          <td>{{ aluno.nome }}</td>
+          <td>{{ aluno.curso }}</td>
         </tr>
       </tbody>
     </table>
