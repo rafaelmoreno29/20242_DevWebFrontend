@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./exemplo-diretivas.component.css'],
 })
 export class ExemploDiretivasComponent {
+  mostrarAlunos: boolean = true;
   alunos: any[] = [
     { ra: '123', nome: 'joão', curso: 'ADS' },
     { ra: '321', nome: 'José', curso: 'Jogos Digitais' },
