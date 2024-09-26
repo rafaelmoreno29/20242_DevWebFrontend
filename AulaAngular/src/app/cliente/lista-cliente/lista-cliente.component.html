@@ -12,7 +12,11 @@
       <th scope="row">{{ cli.id }}</th>
       <td>{{ cli.nome }}</td>
       <td>{{ cli.celular }}</td>
-      <td><a class="btn btn-primary">Editar</a></td>
+      <td>
+        <a [routerLink]="['/cliente/detalhe', cli.id]" class="btn btn-primary"
+          >Editar</a
+        >
+      </td>
     </tr>
   </tbody>
 </table>
