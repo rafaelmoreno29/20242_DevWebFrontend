@@ -11,8 +11,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
 import { ExemploDiretivasComponent } from './exemplo-diretivas/exemplo-diretivas.component';
 import { ClienteComponent } from './cliente/cliente.component';
-import { ListaClienteComponent } from './Cliente/lista-cliente/lista-cliente.component';
-import { ListaCompraClienteComponent } from './Cliente/lista-compra-cliente/lista-compra-cliente.component';
+import { ListaClienteComponent } from './cliente/lista-cliente/lista-cliente.component';
+import { ListaCompraClienteComponent } from './cliente/lista-compra-cliente/lista-compra-cliente.component';
+import { ClienteDetalheComponent } from './cliente-detalhe/cliente-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ListaCompraClienteComponent } from './Cliente/lista-compra-cliente/list
     ClienteComponent,
     ListaClienteComponent,
     ListaCompraClienteComponent,
+    ClienteDetalheComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [],
