@@ -8,6 +8,7 @@ import { ExemploDiretivasComponent } from './exemplo-diretivas/exemplo-diretivas
 import { ClienteComponent } from './cliente/cliente.component';
 import { ListaClienteComponent } from './cliente/lista-cliente/lista-cliente.component';
 import { ListaCompraClienteComponent } from './cliente/lista-compra-cliente/lista-compra-cliente.component';
+import { ClienteDetalheComponent } from './cliente-detalhe/cliente-detalhe.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes = [
     children: [
       { path: 'lista-cliente', component: ListaClienteComponent },
       { path: 'lista-compra', component: ListaCompraClienteComponent },
+      { path: 'detalhe/:id', component: ClienteDetalheComponent },
     ],
   },
 
