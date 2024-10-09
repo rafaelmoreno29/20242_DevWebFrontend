@@ -30,10 +30,14 @@
     class="form-control"
     name="celular"
     required
+    minlength="11"
   />
   <div *ngIf="form.submitted && form.controls['celular'].errors" class="error">
     <div *ngIf="form.controls['celular'].errors['required']">
       Celular é obrigatório
+    </div>
+    <div *ngIf="form.controls['celular'].errors['minlength']">
+      Celular incorreto
     </div>
   </div>
 
