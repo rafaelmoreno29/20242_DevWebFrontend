@@ -19,6 +19,8 @@ export class FormTemplateDrivenComponent {
     celular: '',
   };
   salvar(form: NgForm) {
-    console.log(this.cliente);
+    if (form.valid) {
+      console.log(this.cliente);
+    }
   }
 }
