@@ -9,6 +9,8 @@ import { ClienteComponent } from './cliente/cliente.component';
 import { ListaClienteComponent } from './cliente/lista-cliente/lista-cliente.component';
 import { ListaCompraClienteComponent } from './cliente/lista-compra-cliente/lista-compra-cliente.component';
 import { ClienteDetalheComponent } from './cliente-detalhe/cliente-detalhe.component';
+import { FormTemplateDrivenComponent } from './form-template-driven/form-template-driven.component';
+import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -26,7 +28,8 @@ const routes: Routes = [
       { path: 'detalhe/:id', component: ClienteDetalheComponent },
     ],
   },
-
+  { path: 'form-template-driven', component: FormTemplateDrivenComponent },
+  { path: 'form-reactive', component: FormReactiveComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
