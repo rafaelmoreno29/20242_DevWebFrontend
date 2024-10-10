@@ -1,12 +1,35 @@
-<form>
+<form [formGroup]="form">
   <label class="form-label">Nome</label>
-  <input class="form-control" />
+  <input class="form-control" formControlName="nome" />
+  <div
+    *ngIf="
+      form.get('nome')!.invalid &&
+      (form.get('nome')!.dirty || form.get('nome')!.touched)
+    "
+  >
+    <div *ngIf="form.get('nome')!.errors?.['required']">Nome é obrigatório</div>
+  </div>
 
   <label class="form-label">E-mail</label>
-  <input class="form-control" />
+  <input class="form-control" formControlName="email" />
+  <div
+    *ngIf="
+      form.get('email')!.invalid &&
+      (form.get('email')!.dirty || form.get('email')!.touched)
+    "
+  >
+    <div *ngIf="form.get('email')!.errors?.['required']">
+      E-mail é obrigatório
+    </div>
+    <div *ngIf="form.get('email')!.errors?.['email']">
+      E-mail não está em padrão válido
+    </div>
+  </div>
 
   <label class="form-label">Celular</label>
-  <input class="form-control" />
+  <input class="form-control" formControlName="celular" />
 
-  <button type="submit" class="btn btn-primary">Salvar</button>
+  <button [disabled]="form.invalid" type="submit" class="btn btn-primary">
+    Salvar
+  </button>
 </form>
