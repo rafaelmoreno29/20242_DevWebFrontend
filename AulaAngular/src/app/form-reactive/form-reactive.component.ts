@@ -13,7 +13,7 @@ export class FormReactiveComponent {
     this.form = new FormGroup({
       nome: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
-      celular: new FormControl(''),
+      celular: new FormControl('', Validators.minLength(11)),
     });
   }
   salvar() {

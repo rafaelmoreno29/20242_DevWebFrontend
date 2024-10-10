@@ -30,6 +30,17 @@
 
   <label class="form-label">Celular</label>
   <input class="form-control" formControlName="celular" />
+  <div
+    class="error"
+    *ngIf="
+      form.get('celular')!.invalid &&
+      (form.get('celular')!.dirty || form.get('celular')!.touched)
+    "
+  >
+    <div *ngIf="form.get('celular')!.errors?.['minlength']">
+      Celular Formato inválido
+    </div>
+  </div>
 
   <button [disabled]="form.invalid" type="submit" class="btn btn-primary">
     Salvar
