@@ -1,9 +1,12 @@
 exports.ex1 = (req, res) => {
-    const palavra = req.query.palavra.tolowerCase();
+    const palavra = req.query.palavra;
     let vogais = 0;
     for (let i = 0; i < palavra.length; i++) {
-        if (palavra[i] === 'a' || palavra[i] === 'e' || palavra[i] === 'i'
-            || palavra[i] === 'o' || palavra[i] === 'u') {
+        if (palavra[i].toLowerCase() === 'a' ||
+            palavra[i].toLowerCase() === 'e' ||
+            palavra[i].toLowerCase() === 'i' ||
+            palavra[i].toLowerCase() === 'o' ||
+            palavra[i].toLowerCase() === 'u') {
             vogais++;
         }
     }
