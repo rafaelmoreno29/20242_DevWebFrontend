@@ -16,6 +16,7 @@ import { ListaCompraClienteComponent } from './cliente/lista-compra-cliente/list
 import { ClienteDetalheComponent } from './cliente-detalhe/cliente-detalhe.component';
 import { FormTemplateDrivenComponent } from './form-template-driven/form-template-driven.component';
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
+import { AlunoComponent } from './aluno/aluno.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FormReactiveComponent } from './form-reactive/form-reactive.component';
     ClienteDetalheComponent,
     FormTemplateDrivenComponent,
     FormReactiveComponent,
+    AlunoComponent,
   ],
   imports: [
     BrowserModule,
