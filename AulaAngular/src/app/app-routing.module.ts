@@ -11,10 +11,12 @@ import { ListaCompraClienteComponent } from './cliente/lista-compra-cliente/list
 import { ClienteDetalheComponent } from './cliente-detalhe/cliente-detalhe.component';
 import { FormTemplateDrivenComponent } from './form-template-driven/form-template-driven.component';
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
+import { AlunoComponent } from './aluno/aluno.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'aluno', component: AlunoComponent },
   { path: 'about', component: AboutComponent },
   { path: 'feature', component: FeatureComponent },
   { path: 'feature/:id', component: FeatureComponent },
