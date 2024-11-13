@@ -3,10 +3,13 @@ const usuarioRouter = require('./routes/usuario');
 const lista1Router = require('./routes/lista1');
 const alunoRouter = require('./routes/aluno');
 
+const cors = require('cors');
 
 const mongoose = require('mongoose');
 
 const app = express();
+app.use(cors());
+
 app.use(express.json());
 app.use('/usuario', usuarioRouter);
 app.use('/lista1', lista1Router);

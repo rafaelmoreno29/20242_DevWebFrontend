@@ -13,4 +13,7 @@ export class AlunoService {
   obterPorId(id: number) {
     return this.http.get('http://localhost:3000/aluno/' + id);
   }
+  inserir(aluno: any) {
+    return this.http.post('http://localhost:3000/aluno', aluno);
+  }
 }
