@@ -9,6 +9,7 @@ import { FeatureComponent } from './feature/feature.component';
 import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { ExemploDiretivasComponent } from './exemplo-diretivas/exemplo-diretivas.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { ListaClienteComponent } from './cliente/lista-cliente/lista-cliente.component';
@@ -40,6 +41,7 @@ import { AlunoComponent } from './aluno/aluno.component';
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
