@@ -25,9 +25,9 @@ exports.remover = async (req, res) => {
 }
 exports.editar = async (req, res) => {
     try {
-        const aluno = await alunoModel.findOne({ _id: req.params.id });
+        const aluno = await alunoModel.findOne({ ra: req.params.ra });
         if (aluno) {
-            await alunoModel.updateOne({ _id: req.params.id }, req.body);
+            await alunoModel.updateOne({ _id: aluno._id }, req.body);
             res.status(200).json(req.body);
         } else {
             res.status(400).json({ message: 'Aluno não encontrado' });

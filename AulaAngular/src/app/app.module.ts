@@ -18,6 +18,7 @@ import { ClienteDetalheComponent } from './cliente-detalhe/cliente-detalhe.compo
 import { FormTemplateDrivenComponent } from './form-template-driven/form-template-driven.component';
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 import { AlunoComponent } from './aluno/aluno.component';
+import { AlunoDetalheComponent } from './aluno-detalhe/aluno-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { AlunoComponent } from './aluno/aluno.component';
     FormTemplateDrivenComponent,
     FormReactiveComponent,
     AlunoComponent,
+    AlunoDetalheComponent,
   ],
   imports: [
     BrowserModule,
